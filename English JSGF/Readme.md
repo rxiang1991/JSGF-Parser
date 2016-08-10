@@ -15,8 +15,7 @@ Convert sentences to grammar.
 Usage
 -----
 
-$ ./run.sh
-(Then type the name of the voice command file.)
+$ ./syl2phone.sh  (Then type the name of the voice command file.)
 
 $ ./JSGFParser.sh command English.jsgf
 
