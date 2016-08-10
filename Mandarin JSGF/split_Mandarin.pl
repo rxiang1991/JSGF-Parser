@@ -1,6 +1,7 @@
-#!/usr/bin/perl 
-
+#!/usr/bin/perl -w
 use strict; 
+no warnings 'recursion';
+
 
 sub substring() { 
     my ($str, $maxlen) = @_; 
@@ -21,13 +22,18 @@ sub substring() {
 #    return "$retval\n" . &substring(substr($str,$maxlen-$trim),$maxlen); 
 } 
 
+
+
 my $input_file = shift;
 my $str = `cat $input_file`; 
 print &substring($str, 3) . "\n"; 
 
 
+
 =pod
+Reference:
 http://www.programgo.com/article/86393910360/
 =cut
+
 
 

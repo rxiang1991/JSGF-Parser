@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Main Script
 
 segmentation='segmentation.txt'
@@ -6,7 +6,8 @@ segmentation='segmentation.txt'
 # Read input_file
 read -p 'Please input your file : ' input_file
 
-perl split_Mandarin.pl $input_file > $segmentation
+# Split Mandarin sentences
+perl split_Mandarin.pl "$input_file" > $segmentation
 
 # Delete white space (not used)
 sed -i -e 's/^.//g' -e 's/ $//g' -e '/^$/d' $segmentation
@@ -15,10 +16,14 @@ sed -i -e 's/^.//g' -e 's/ $//g' -e '/^$/d' $segmentation
 
 #rm $segmentation
 
-: << !
+
+
+: << Comment
 Generate files:
 1. syl2phones.txt (sentence and phones)
 2. dict.txt
 3. phones.txt 
-!
+Comment
+
+
 

@@ -1,0 +1,79 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar for simple voice commands
+ *
+ * @author William Liao
+ * @version 1.0
+ * @example open the window
+ */
+
+grammar voice_commands;
+
+public <my_grammar> = /1/ <commands>;
+
+
+<commands> = 
+<Look before you leap> | 
+<Diamond cuts diamond> | 
+<Dead men tell no tales> | 
+<Tomorrow never comes> | 
+<You have my word> | 
+<Put the cart before the horse> | 
+<United we stand> | 
+<Hunger is the best sauce> | 
+<No sweet without sweat> | 
+<Impossible is nothing> | 
+<Gold will not buy anything> | 
+<Once a thief always a thief> | 
+<Much would have more> | 
+<No pains no gains> | 
+<Many hands make light work> | 
+<Like father like son> | 
+<Nothing brave nothing have> | 
+<Second thoughts are best> | 
+<Think today and speak tomorrow> | 
+<Make your enemy your friend> | 
+<Light come light go> | 
+<Spring follows winter> | 
+<What must be must be> | 
+<Might is right> | 
+<Ill counsel mars all> | 
+<Good counsel has no price> | 
+<Good counsel never comes too late> | 
+<Even homer sometimes nods> | 
+<Nothing seek nothing find>  
+;
+
+
+<Look before you leap>=	Look before you leap;
+<Diamond cuts diamond>=	Diamond cuts diamond;
+<Dead men tell no tales>=	Dead men tell no tales;
+<Tomorrow never comes>=	Tomorrow never comes;
+<You have my word>=	You have my word;
+<Put the cart before the horse>=	Put the cart before the horse;
+<United we stand>=	United we stand;
+<Hunger is the best sauce>=	Hunger is the best sauce;
+<No sweet without sweat>=	No sweet without sweat;
+<Impossible is nothing>=	Impossible is nothing;
+<Gold will not buy anything>=	Gold will not buy anything;
+<Once a thief always a thief>=	Once a thief always a thief;
+<Much would have more>=	Much would have more;
+<No pains no gains>=	No pains no gains;
+<Many hands make light work>=	Many hands make light work;
+<Like father like son>=	Like father like son;
+<Nothing brave nothing have>=	Nothing brave nothing have;
+<Second thoughts are best>=	Second thoughts are best;
+<Think today and speak tomorrow>=	Think today and speak tomorrow;
+<Make your enemy your friend>=	Make your enemy your friend;
+<Light come light go>=	Light come light go;
+<Spring follows winter>=	Spring follows winter;
+<What must be must be>=	What must be must be;
+<Might is right>=	Might is right;
+<Ill counsel mars all>=	Ill counsel mars all;
+<Good counsel has no price>=	Good counsel has no price;
+<Good counsel never comes too late>=	Good counsel never comes too late;
+<Even homer sometimes nods>=	Even homer sometimes nods;
+<Nothing seek nothing find>=	Nothing seek nothing find;
+
+
