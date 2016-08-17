@@ -75,12 +75,18 @@ fi
 
 
 
+# Save temporary file
+# =================================================================================
+cat "$Input_file" > $Temp_file
+# =================================================================================
+
+
+
 # General Grammar
 # =================================================================================
 echo '<commands> = ' >> "$Output_file"
 
 # label (self-defined)
-cat $Input_file 
 sed -e 's/^/</' -e 's/$/>=/' "$Input_file" > $paste_temp1
 sed -e 's/$/;/' "$Input_file" > $paste_temp2
 paste $paste_temp1 $paste_temp2 > $JSGF_rulename
