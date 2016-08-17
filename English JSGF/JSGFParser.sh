@@ -21,7 +21,7 @@ JSGF_rulename='rulename.txt'
 JSGF_token='token.txt'
 # =================================================================================
 
-
+ 
 
 # Detect whether grammar file name exist or not
 # =================================================================================
@@ -75,19 +75,12 @@ fi
 
 
 
-# Preprocessing
-# =================================================================================
-cat "$Input_file" > $Temp_file
-sed -i '1 d' "$Input_file"
-# =================================================================================
-
-
-
 # General Grammar
 # =================================================================================
 echo '<commands> = ' >> "$Output_file"
 
 # label (self-defined)
+cat $Input_file 
 sed -e 's/^/</' -e 's/$/>=/' "$Input_file" > $paste_temp1
 sed -e 's/$/;/' "$Input_file" > $paste_temp2
 paste $paste_temp1 $paste_temp2 > $JSGF_rulename
@@ -117,7 +110,7 @@ echo "$var" >> $JSGF_token
 cat $Temp_file > "$Input_file"
 
 # Remove temporary files
-rm $Temp_file $paste_temp1 $paste_temp2 $JSGF_rulename $JSGF_token
+rm $Temp_file $paste_temp1 $paste_temp2 $JSGF_rulename $JSGF_token 
 # =================================================================================
 
 
@@ -133,6 +126,3 @@ References:
    http://cmusphinx.sourceforge.net/wiki/tutoriallm
 
 Comment
-
-
-
