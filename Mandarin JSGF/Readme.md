@@ -14,12 +14,12 @@ Convert sentences to grammar.
 
 Usage
 -----
-
+```shell
 $ ./run.sh
 (Then type the name of the voice command file.)
 
 $ ./JSGFParser.sh segmentation.txt Mandarin.jsgf
-
+```
 
 Result
 ------
