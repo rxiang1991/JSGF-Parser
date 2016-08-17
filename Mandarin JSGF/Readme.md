@@ -15,8 +15,7 @@ Convert sentences to grammar.
 Usage
 -----
 
-    $ ./run.sh
-    (Then type the name of the voice command file.)
+    $ ./run.sh  (Then type the name of the voice command file.)
 
     $ ./JSGFParser.sh segmentation.txt Mandarin.jsgf
 
