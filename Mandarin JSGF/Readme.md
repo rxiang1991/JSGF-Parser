@@ -31,7 +31,7 @@ Grammar:    Mandarin.jsgf
 pocketsphinx
 ------------
 
-    $ pocketsphinx -infile test.wav -argfile config
+    $ pocketsphinx_continuous -infile test.wav -argfile config
 
 Example config:
 > -logfn /dev/null
