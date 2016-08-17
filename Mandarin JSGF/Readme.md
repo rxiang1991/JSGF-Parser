@@ -15,10 +15,10 @@ Convert sentences to grammar.
 Usage
 -----
 
-  $ ./run.sh
-  (Then type the name of the voice command file.)
+    $ ./run.sh
+    (Then type the name of the voice command file.)
 
-  $ ./JSGFParser.sh segmentation.txt Mandarin.jsgf
+    $ ./JSGFParser.sh segmentation.txt Mandarin.jsgf
 
 
 Result
@@ -32,7 +32,7 @@ Grammar:    Mandarin.jsgf
 pocketsphinx
 ------------
 
-  $ pocketsphinx -infile test.wav -argfile config
+    $ pocketsphinx -infile test.wav -argfile config
 
 Example config:
 > -logfn /dev/null
